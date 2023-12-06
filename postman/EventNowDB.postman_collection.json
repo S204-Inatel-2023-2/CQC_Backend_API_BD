@@ -1,0 +1,219 @@
+{
+	"info": {
+		"_postman_id": "a0af2ab9-6906-435b-a449-25414f27eb01",
+		"name": "EventNowDB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31467940"
+	},
+	"item": [
+		{
+			"name": "https://7x3nasz0vi.execute-api.us-east-2.amazonaws.com/dev/cadastro",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\t[{\r\n\t  \"nome\": \"nomhop\",\r\n\t  \"email\": \"mail7jjpo\",\r\n\t  \"senha\": \"password\"\r\n\t}]"
+				},
+				"url": {
+					"raw": "https://7x3nasz0vi.execute-api.us-east-2.amazonaws.com/dev/cadastro",
+					"protocol": "https",
+					"host": [
+						"7x3nasz0vi",
+						"execute-api",
+						"us-east-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"cadastro"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://7x3nasz0vi.execute-api.us-east-2.amazonaws.com/dev/cadastroevento",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"evento2\",\r\n    \"local\": \"local2\",\r\n    \"administrador\": \"Vazio\"\r\n}"
+				},
+				"url": {
+					"raw": "https://7x3nasz0vi.execute-api.us-east-2.amazonaws.com/dev/cadastroevento",
+					"protocol": "https",
+					"host": [
+						"7x3nasz0vi",
+						"execute-api",
+						"us-east-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"cadastroevento"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://7x3nasz0vi.execute-api.us-east-2.amazonaws.com/dev/login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\t[{\r\n\t  \"nome\": \"nome4\",\r\n\t  \"email\": \"mail7\",\r\n\t  \"senha\": \"password\"\r\n\t}]"
+				},
+				"url": {
+					"raw": "https://7x3nasz0vi.execute-api.us-east-2.amazonaws.com/dev/login",
+					"protocol": "https",
+					"host": [
+						"7x3nasz0vi",
+						"execute-api",
+						"us-east-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://7x3nasz0vi.execute-api.us-east-2.amazonaws.com/dev/delete_usuario/<int:nome",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://7x3nasz0vi.execute-api.us-east-2.amazonaws.com/dev/delete_usuario/nome3",
+					"protocol": "https",
+					"host": [
+						"7x3nasz0vi",
+						"execute-api",
+						"us-east-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"delete_usuario",
+						"nome3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://7x3nasz0vi.execute-api.us-east-2.amazonaws.com/dev/add-user-event",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"usuario\": \"nome4\",\r\n    \"evento\": \"evento1\" \r\n}"
+				},
+				"url": {
+					"raw": "https://7x3nasz0vi.execute-api.us-east-2.amazonaws.com/dev/add-user-event",
+					"protocol": "https",
+					"host": [
+						"7x3nasz0vi",
+						"execute-api",
+						"us-east-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"add-user-event"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://7x3nasz0vi.execute-api.us-east-2.amazonaws.com/dev/usuarios",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://7x3nasz0vi.execute-api.us-east-2.amazonaws.com/dev/usuarios",
+					"protocol": "https",
+					"host": [
+						"7x3nasz0vi",
+						"execute-api",
+						"us-east-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://7x3nasz0vi.execute-api.us-east-2.amazonaws.com/dev/eventos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://7x3nasz0vi.execute-api.us-east-2.amazonaws.com/dev/eventos",
+					"protocol": "https",
+					"host": [
+						"7x3nasz0vi",
+						"execute-api",
+						"us-east-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"eventos"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
